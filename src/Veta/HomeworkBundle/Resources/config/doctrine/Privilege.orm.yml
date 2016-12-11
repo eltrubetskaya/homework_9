@@ -1,0 +1,22 @@
+Veta\HomeworkBundle\Entity\Privilege:
+    type: entity
+    repositoryClass: Veta\HomeworkBundle\Repository\PrivilegeRepository
+    table: privilege
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        privilegeName:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: privilege_name
+    lifecycleCallbacks: {  }
