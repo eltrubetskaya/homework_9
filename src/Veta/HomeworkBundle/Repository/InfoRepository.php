@@ -12,7 +12,7 @@ use Doctrine\ORM\EntityRepository;
  */
 class InfoRepository extends EntityRepository
 {
-     /**
+    /**
      * @return mixed
      */
     public function findAllOrderedByName()
